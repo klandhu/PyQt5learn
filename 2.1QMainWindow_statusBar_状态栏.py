@@ -22,14 +22,18 @@ from PyQt5.QtGui import QIcon,QFont
 from PyQt5.QtCore import QCoreApplication
 
 class Example(QMainWindow):
+    # QMainWindow提供了主窗口的功能，使用它能创建一些简单的状态栏、工具栏和菜单栏
     def __init__(self):
-        super().__init__()
+        super().__init__()#  super()构造器方法返回父级的对象即QMainWindow类的对象
 
         self.initUI()
 
     def initUI(self):
-        self.statusBar().showMessage('Ready')
+        # 调用QtGui.QMainWindow类的statusBar()方法，创建状态栏。第一次调用创建一个状态栏，
+        # 返回一个状态栏对象。showMessage()方法在状态栏上显示一条信息
+        self.statusBar().showMessage('Ready')# 状态栏是由QMainWindow创建的所以要绑定self
 
+        #例行设置窗体参数
         self.setGeometry(600,150,600,450)
         self.setWindowTitle('statusBar')
         self.show()
