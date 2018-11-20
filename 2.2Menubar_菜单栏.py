@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-"""
+""" 
 ZetCode PyQt5 tutorial
 
 This program creates a menubar. The
