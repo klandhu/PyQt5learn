@@ -15,6 +15,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget
 
 if __name__=="__main__":
+    # QApplication管理GUI程序的控制流和主要设置。
     app = QApplication(sys.argv) # 创建一个应用对象 sys.argv是一组命令行参数的列表
 
     # QWigdget控件是一个用户界面的基本控件，它提供了基本的应用程序构造器。

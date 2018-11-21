@@ -27,7 +27,7 @@ class Example(QMainWindow):
         viewMenu = menubar.addMenu('View')
 
         viewStatAct = QAction('View statusbar',self,checkable=True)
-        viewStatAct.setStatusTip('Check Menu')
+        viewStatAct.setStatusTip('View statubar')
         viewStatAct.setChecked(True)
         viewStatAct.triggered.connect(self.toggleMenu)
 
@@ -37,7 +37,7 @@ class Example(QMainWindow):
         self.setWindowTitle('Check Menu')
         self.show()
 
-    def toggleMenu(self):
+    def toggleMenu(self,state):
         if state:
             self.statusbar.show()
         else:
