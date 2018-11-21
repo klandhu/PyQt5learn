@@ -24,7 +24,10 @@ class Example(QWidget):
         self.initUI()
 
     def initUI(self):
+        # 新建一个QLCDNumber对象
         lcd = QLCDNumber(self)
+        # 设置晶体管控件QLCDNumber0能显示的位数
+        lcd.setDigitCount(10)
         sld =QSlider(Qt.Horizontal,self)
 
         vbox = QVBoxLayout()
