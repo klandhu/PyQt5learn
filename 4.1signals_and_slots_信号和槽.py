@@ -32,6 +32,9 @@ class Example(QWidget):
         vbox.addWidget(sld)
 
         self.setLayout(vbox)
+        #我们将滑块条的valueChanged信号和lcd数字显示的display槽连接在一起。
+
+发送者是一个发送了信号的对象。接受者是一个接受了信号的对象。槽是对信号做出反应的方法
         sld.valueChanged.connect(lcd.display)
 
         self.setGeometry(600,150,600,450)
