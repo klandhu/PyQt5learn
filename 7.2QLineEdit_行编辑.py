@@ -40,7 +40,7 @@ class Example(QWidget):
 
     def onChanged(self,text):
         self.lbl.setText(text)# text()是标签名字
-        self.lbl.adjustSize()
+        self.lbl.adjustSize() # 根据内容自适应尺寸
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
